@@ -19,5 +19,15 @@ namespace Models.Tests
             p.LastName = "Cd";
             Assert.AreEqual("Ab Cd", p.FullName);
         }
+
+        [Test]
+        public void PersonTest_FullName_Failing()
+        {
+            Person p = new Person();
+            p.FirstName = "Ab";
+            p.LastName = "Cde";
+            Assert.AreEqual("Ab Cd", p.FullName);
+        }
+
     }
 }
