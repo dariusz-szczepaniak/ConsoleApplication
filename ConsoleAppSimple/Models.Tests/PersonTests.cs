@@ -21,11 +21,11 @@ namespace Models.Tests
         }
 
         [Test]
-        public void PersonTest_FullName_Failing()
+        public void PersonTest_FullName_FailingNoMore()
         {
             Person p = new Person();
             p.FirstName = "Ab";
-            p.LastName = "Cde";
+            p.LastName = "Cd";
             Assert.AreEqual("Ab Cd", p.FullName);
         }
 
