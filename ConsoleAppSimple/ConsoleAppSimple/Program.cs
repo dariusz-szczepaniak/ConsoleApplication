@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using ConsoleAppSimple.Models;
@@ -17,6 +18,11 @@ namespace ConsoleAppSimple
             p.LastName = "Solo";
 
             Console.WriteLine(p);
+
+            Assembly assembly = Assembly.LoadFrom("Models.dll");
+            Version ver = assembly.GetName().Version;
+
+            Console.WriteLine(ver.ToString());
         }
     }
 
