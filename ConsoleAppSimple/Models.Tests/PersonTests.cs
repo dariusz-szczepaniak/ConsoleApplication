@@ -29,5 +29,13 @@ namespace Models.Tests
             Assert.AreEqual("Ab Cd", p.FullName);
         }
 
+        [Test]
+        public void PersonTest_MakeOlder()
+        {
+            Person p = new Person();
+            p.MakeOlder(99);
+            Assert.AreEqual(99, p.Age);
+        }
+
     }
 }

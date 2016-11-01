@@ -22,7 +22,7 @@ namespace ConsoleAppSimple
             Assembly assembly = Assembly.LoadFrom("Models.dll");
             Version ver = assembly.GetName().Version;
 
-            Console.WriteLine(ver.ToString());
+            Console.WriteLine(ver.ToString());            
         }
     }
 
