@@ -4,13 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using ConsoleAppSimple.Models;
+using NUnit.Framework;
 
 namespace Models.Tests
 {
-    [TestClass]
+    [TestFixture]
     public class PersonTests
     {
-        [TestMethod]
+        [Test]
         public void PersonTest_FullName()
         {
             Person p = new Person();
