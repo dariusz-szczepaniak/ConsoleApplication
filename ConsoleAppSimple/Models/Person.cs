@@ -1,3 +1,5 @@
+using System;
+
 namespace ConsoleAppSimple.Models
 {
     public class Person
@@ -30,7 +32,7 @@ namespace ConsoleAppSimple.Models
 
         public override string ToString()
         {
-            return $"FullName: {FullName}, Age: {Age}";
+            return String.Format("FullName: {0}, Age: {1}", FullName, Age);
         }
     }
 }

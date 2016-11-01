@@ -51,4 +51,15 @@
   <Target Name="AfterBuild">
   </Target>
   -->
+  <Target Name="TestMessage" AfterTargets="Build" >
+    <!--Use $(Property Name) to reference a property-->
+	<Message Text="messages:" Importance="high"/>
+    <Message Text="$(MSBuildExtensionsPath)" Importance="high"/>
+    <Message Text="$(ProjectGuid)" Importance="high"/>
+    <Message Text="$(Configuration)" Importance="high"/>
+    <Message Text="$(DefineConstants)" Importance="high"/>
+    <Message Text="$(MSBuildToolsPath)" Importance="high"/>
+	
+	
+  </Target>
 </Project>
