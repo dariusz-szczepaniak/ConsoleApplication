@@ -37,6 +37,6 @@ namespace Models.Tests
             Assert.AreEqual(99, p.Age);
         }
 
-        //build kickstarter
+        //build kickstarter1
     }
 }
